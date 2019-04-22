@@ -13,11 +13,12 @@ platforms :jruby do
 end
 
 platforms :ruby do
-  gem 'mysql2'
-  gem 'pg', '~> 0.18'
+#   gem 'mysql2'
+#   gem 'pg', '~> 0.18'
 end
 
 group :test do
+  gem 'state_machine_checker', git: 'https://github.com/CJStadler/state_machine_checker.git'
   gem 'capybara', '~> 2.16'
   gem 'capybara-screenshot', '~> 1.0'
   gem 'database_cleaner', '~> 1.3'
